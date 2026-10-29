@@ -1,0 +1,17 @@
+# Local dependencies and test/build output
+node_modules/
+.cache/
+.venv/
+__pycache__/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
