@@ -1,0 +1,8 @@
+# Local Python environment used only to build the notes PDF
+.venv/
+__pycache__/
+*.pyc
+
+# Editor / OS scratch files
+.DS_Store
+Thumbs.db
