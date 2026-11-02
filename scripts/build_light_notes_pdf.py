@@ -2,7 +2,6 @@
 
 Outputs:
   study-notes/light-reflection-refraction/class10-light-reflection-refraction-ncert-notes.pdf
-  study-notes/light-reflection-refraction/class10-light-reflection-refraction-ncert-notes.md
   study-notes/light-reflection-refraction/download.html
 """
 
@@ -571,9 +570,6 @@ def write_download_page():
         <a class="button secondary" href="./class10-light-reflection-refraction-ncert-notes.pdf" target="_blank" rel="noopener">
           Open PDF in new tab
         </a>
-        <a class="button secondary" href="./class10-light-reflection-refraction-ncert-notes.md" download>
-          Download text version (.md)
-        </a>
       </div>
       <ul class="meta">
         <li>{page_count} pages</li>
@@ -672,9 +668,7 @@ def build_pdf():
 
 def main():
     page_count = build_pdf()
-    write_markdown()
     write_download_page()
-    print(f"Built Markdown: {MD_PATH}")
     print(f"Built download page: {HTML_PATH}")
     print(f"Total pages: {page_count}")
 
